@@ -6,6 +6,10 @@
   <title>DevDashboard - GitHub & Vercel Stats</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2); }
+    .gradient-text { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
   <!-- Header -->
@@ -29,7 +33,7 @@
 
   <main class="max-w-7xl mx-auto px-6 py-8">
     <!-- Stats -->
-    <div class="grid grid-cols-4 gap-4 mb-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       <div class="bg-white/5 border border-white/10 rounded-xl p-5">
         <div class="flex items-center gap-2 mb-2">
           <i class="fas fa-code-commit text-indigo-400"></i>
@@ -61,6 +65,209 @@
         </div>
         <p class="text-3xl font-bold">13</p>
         <p class="text-green-400 text-sm mt-1">Active</p>
+      </div>
+    </div>
+
+    <!-- All Projects Grid -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <i class="fas fa-rocket text-indigo-400"></i> All Projects
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Project 1 -->
+        <a href="https://contentforge-alpha.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-orange-500/20 to-pink-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">📝</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">ContentForge</h3>
+          <p class="text-slate-400 text-sm">AI Content Generator</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 2 -->
+        <a href="https://contentstudio.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🎯</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">ContentStudio</h3>
+          <p class="text-slate-400 text-sm">AI Content Studio</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 3 -->
+        <a href="https://imageforge-green.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🖼️</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">ImageForge</h3>
+          <p class="text-slate-400 text-sm">AI Image Generator</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 4 -->
+        <a href="https://urlforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-teal-500/20 to-cyan-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🔗</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">LinkForge</h3>
+          <p class="text-slate-400 text-sm">URL Shortener</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 5 -->
+        <a href="https://pdfforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-red-500/20 to-orange-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">📄</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">PDFForge</h3>
+          <p class="text-slate-400 text-sm">PDF Tools</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 6 -->
+        <a href="https://invoiceforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">💳</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">InvoiceForge</h3>
+          <p class="text-slate-400 text-sm">Invoice Generator</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 7 -->
+        <a href="https://qrforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">⬛</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">QRForge</h3>
+          <p class="text-slate-400 text-sm">QR Code Generator</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 8 -->
+        <a href="https://weatherforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-blue-500/20 to-indigo-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🌤️</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">WeatherForge</h3>
+          <p class="text-slate-400 text-sm">Weather Dashboard</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 9 -->
+        <a href="https://snippetforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">💻</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">SnippetForge</h3>
+          <p class="text-slate-400 text-sm">Code Snippets</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 10 -->
+        <a href="https://chatbotforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">🤖</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">ChatbotForge</h3>
+          <p class="text-slate-400 text-sm">AI Chatbot Builder</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 11 -->
+        <a href="https://scheduleforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">📅</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">ScheduleForge</h3>
+          <p class="text-slate-400 text-sm">Social Scheduler</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 12 -->
+        <a href="https://writeforge.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-violet-500/20 to-purple-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">✍️</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">WriteForge</h3>
+          <p class="text-slate-400 text-sm">AI Writing Assistant</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
+        
+        <!-- Project 13 -->
+        <a href="https://mailtrack.vercel.app" target="_blank" class="card-hover bg-gradient-to-br from-teal-500/20 to-green-500/20 border border-white/10 rounded-xl p-5 transition-all duration-300">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-2xl">📧</span>
+            <button class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-full text-xs font-medium">
+              <i class="fas fa-external-link-alt mr-1"></i> Open
+            </button>
+          </div>
+          <h3 class="font-bold text-lg">MailTrack</h3>
+          <p class="text-slate-400 text-sm">Email Tracker</p>
+          <div class="mt-3 flex items-center gap-2 text-xs text-slate-500">
+            <i class="fas fa-plane"></i> Live
+          </div>
+        </a>
       </div>
     </div>
 
@@ -183,109 +390,8 @@
             <div class="flex items-center gap-4">
               <span class="flex items-center gap-1 text-yellow-400 text-sm"><i class="fas fa-star"></i> 7</span>
               <span class="flex items-center gap-1 text-slate-400 text-sm"><i class="fas fa-code-commit"></i> 54</span>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Vercel Projects -->
-    <div class="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6">
-      <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
-        <i class="fas fa-plane text-white"></i> Vercel Projects
-      </h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a href="https://contentforge-alpha.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">contentforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">contentforge-alpha.vercel.app</p>
-        </a>
-        <a href="https://contentstudio.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">contentstudio</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">contentstudio.vercel.app</p>
-        </a>
-        <a href="https://imageforge-green.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">imageforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">imageforge-green.vercel.app</p>
-        </a>
-        <a href="https://urlforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">urlforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">urlforge.vercel.app</p>
-        </a>
-        <a href="https://pdfforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">pdfforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">pdfforge.vercel.app</p>
-        </a>
-        <a href="https://invoiceforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">invoiceforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">invoiceforge.vercel.app</p>
-        </a>
-        <a href="https://qrforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">qrforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">qrforge.vercel.app</p>
-        </a>
-        <a href="https://weatherforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">weatherforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">weatherforge.vercel.app</p>
-        </a>
-        <a href="https://snippetforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">snippetforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">snippetforge.vercel.app</p>
-        </a>
-        <a href="https://chatbotforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">chatbotforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">chatbotforge.vercel.app</p>
-        </a>
-        <a href="https://scheduleforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">scheduleforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">scheduleforge.vercel.app</p>
-        </a>
-        <a href="https://writeforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">writeforge</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">writeforge.vercel.app</p>
-        </a>
-        <a href="https://mailtrack.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-medium">mailtrack</span>
-            <i class="fas fa-plane text-slate-400"></i>
-          </div>
-          <p class="text-slate-400 text-sm">mailtrack.vercel.app</p>
-        </a>
       </div>
     </div>
 
