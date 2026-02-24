@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevDashboard - GitHub & Vercel Stats</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-white">
+  <!-- Header -->
+  <header class="border-b border-white/10 bg-slate-900/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center">
+          <i class="fas fa-chart-line text-white"></i>
+        </div>
+        <span class="text-xl font-bold">DevDashboard</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-slate-400 text-sm">Last 30 days</span>
+        <div class="flex items-center gap-2">
+          <i class="fab fa-github text-white"></i>
+          <span class="font-medium">Tigha66</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Stats -->
+    <div class="grid grid-cols-4 gap-4 mb-8">
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fas fa-code-commit text-indigo-400"></i>
+          <span class="text-slate-400 text-sm">Total Commits</span>
+        </div>
+        <p class="text-3xl font-bold">443</p>
+        <p class="text-green-400 text-sm mt-1">+7 this month</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fas fa-star text-yellow-400"></i>
+          <span class="text-slate-400 text-sm">Total Stars</span>
+        </div>
+        <p class="text-3xl font-bold">77</p>
+        <p class="text-green-400 text-sm mt-1">+5 this month</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fas fa-folder text-blue-400"></i>
+          <span class="text-slate-400 text-sm">Repositories</span>
+        </div>
+        <p class="text-3xl font-bold">15</p>
+        <p class="text-green-400 text-sm mt-1">+3 this month</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fas fa-plane text-white"></i>
+          <span class="text-slate-400 text-sm">Vercel Projects</span>
+        </div>
+        <p class="text-3xl font-bold">13</p>
+        <p class="text-green-400 text-sm mt-1">Active</p>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Recent Commits -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+          <i class="fas fa-code-commit text-indigo-400"></i> Recent Commits
+        </h2>
+        <div class="space-y-3 max-h-80 overflow-y-auto">
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="font-medium">Add Stripe checkout integration</p>
+                <p class="text-slate-400 text-sm mt-1">contentstudio</p>
+              </div>
+              <span class="text-slate-500 text-xs">Today</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="font-medium">Fix build errors</p>
+                <p class="text-slate-400 text-sm mt-1">courseforge</p>
+              </div>
+              <span class="text-slate-500 text-xs">Today</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="font-medium">Update UI components</p>
+                <p class="text-slate-400 text-sm mt-1">converterforge</p>
+              </div>
+              <span class="text-slate-500 text-xs">Yesterday</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="font-medium">Add new features</p>
+                <p class="text-slate-400 text-sm mt-1">contentforge</p>
+              </div>
+              <span class="text-slate-500 text-xs">2 days ago</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="font-medium">Bug fixes</p>
+                <p class="text-slate-400 text-sm mt-1">imageforge</p>
+              </div>
+              <span class="text-slate-500 text-xs">3 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repositories -->
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+        <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+          <i class="fab fa-github text-white"></i> GitHub Repositories
+        </h2>
+        <div class="space-y-3 max-h-80 overflow-y-auto">
+          <div class="bg-white/5 rounded-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+                <i class="fas fa-code text-indigo-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">contentforge</p>
+                <p class="text-slate-400 text-sm">TypeScript</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="flex items-center gap-1 text-yellow-400 text-sm"><i class="fas fa-star"></i> 23</span>
+              <span class="flex items-center gap-1 text-slate-400 text-sm"><i class="fas fa-code-commit"></i> 156</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+                <i class="fas fa-code text-indigo-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">imageforge</p>
+                <p class="text-slate-400 text-sm">TypeScript</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="flex items-center gap-1 text-yellow-400 text-sm"><i class="fas fa-star"></i> 15</span>
+              <span class="flex items-center gap-1 text-slate-400 text-sm"><i class="fas fa-code-commit"></i> 89</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+                <i class="fas fa-code text-indigo-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">contentstudio</p>
+                <p class="text-slate-400 text-sm">TypeScript</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="flex items-center gap-1 text-yellow-400 text-sm"><i class="fas fa-star"></i> 12</span>
+              <span class="flex items-center gap-1 text-slate-400 text-sm"><i class="fas fa-code-commit"></i> 45</span>
+            </div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center">
+                <i class="fas fa-code text-indigo-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">urlforge</p>
+                <p class="text-slate-400 text-sm">TypeScript</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="flex items-center gap-1 text-yellow-400 text-sm"><i class="fas fa-star"></i> 7</span>
+              <span class="flex items-center gap-1 text-slate-400 text-sm"><i class="fas fa-code-commit"></i> 54</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vercel Projects -->
+    <div class="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6">
+      <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+        <i class="fas fa-plane text-white"></i> Vercel Projects
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="https://contentforge-alpha.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">contentforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">contentforge-alpha.vercel.app</p>
+        </a>
+        <a href="https://contentstudio.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">contentstudio</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">contentstudio.vercel.app</p>
+        </a>
+        <a href="https://imageforge-green.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">imageforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">imageforge-green.vercel.app</p>
+        </a>
+        <a href="https://urlforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">urlforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">urlforge.vercel.app</p>
+        </a>
+        <a href="https://pdfforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">pdfforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">pdfforge.vercel.app</p>
+        </a>
+        <a href="https://invoiceforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">invoiceforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">invoiceforge.vercel.app</p>
+        </a>
+        <a href="https://qrforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">qrforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">qrforge.vercel.app</p>
+        </a>
+        <a href="https://weatherforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">weatherforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">weatherforge.vercel.app</p>
+        </a>
+        <a href="https://snippetforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">snippetforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">snippetforge.vercel.app</p>
+        </a>
+        <a href="https://chatbotforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">chatbotforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">chatbotforge.vercel.app</p>
+        </a>
+        <a href="https://scheduleforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">scheduleforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">scheduleforge.vercel.app</p>
+        </a>
+        <a href="https://writeforge.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">writeforge</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">writeforge.vercel.app</p>
+        </a>
+        <a href="https://mailtrack.vercel.app" target="_blank" class="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-indigo-500/50 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-medium">mailtrack</span>
+            <i class="fas fa-plane text-slate-400"></i>
+          </div>
+          <p class="text-slate-400 text-sm">mailtrack.vercel.app</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Activity Chart -->
+    <div class="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6">
+      <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+        <i class="fas fa-chart-line text-green-400"></i> Activity (Last 30 Days)
+      </h2>
+      <div class="flex items-end justify-between h-32 gap-1">
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 60%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 80%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 45%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 90%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 55%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 70%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 40%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 85%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 65%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 50%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 75%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 35%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 95%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 60%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 80%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 45%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 70%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 55%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 90%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 40%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 85%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 65%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 50%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 75%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 35%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 95%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 60%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 80%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 45%"></div>
+        <div class="flex-1 bg-gradient-to-t from-indigo-500 to-purple-500 rounded-t" style="height: 100%"></div>
+      </div>
+      <div class="flex justify-between mt-2 text-xs text-slate-500">
+        <span>30 days ago</span>
+        <span>Today</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-slate-500 text-sm">Built with HTML & Tailwind • Data refreshed automatically</p>
+    </div>
+  </footer>
+</body>
+</html>
