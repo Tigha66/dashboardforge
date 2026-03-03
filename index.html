@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Business Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #0a0a0a; }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Header -->
+    <header class="bg-black/80 backdrop-blur-xl border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
+                    <i data-lucide="rocket" class="w-5 h-5"></i>
+                </div>
+                <span class="font-bold text-xl">My AI Business Dashboard</span>
+            </div>
+            <div class="text-gray-400 text-sm">Last Updated: March 3, 2026</div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-4 gap-4 mb-12">
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="text-3xl font-bold text-orange-500">8</div>
+                <div class="text-gray-400">Projects Built</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="text-3xl font-bold text-green-500">3</div>
+                <div class="text-gray-400">Sites Deployed</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="text-3xl font-bold text-blue-500">5</div>
+                <div class="text-gray-400">Services Ready</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="text-3xl font-bold text-purple-500">2</div>
+                <div class="text-gray-400">AI Agents</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <h2 class="text-2xl font-bold mb-6">🚀 Projects</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <!-- AI Voice Platform -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-orange-500/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="phone-call" class="w-5 h-5 text-orange-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">AI Voice Platform</h3>
+                        <p class="text-gray-400 text-sm">Full voice agent with billing</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Tigha66/voiceai-platform" class="text-orange-400 text-sm hover:underline">GitHub →</a>
+            </div>
+
+            <!-- ElevenLabs Voice Agent -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-red-500/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="mic" class="w-5 h-5 text-red-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">ElevenLabs Voice Agent</h3>
+                        <p class="text-gray-400 text-sm">Running on VPS</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Tigha66/elevenlabs-voice-agent" class="text-orange-400 text-sm hover:underline">GitHub →</a>
+            </div>
+
+            <!-- Local Lead Gen -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="users" class="w-5 h-5 text-blue-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Local Lead Gen</h3>
+                        <p class="text-gray-400 text-sm">Automate lead generation</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Tigha66/local-lead-gen-automation" class="text-orange-400 text-sm hover:underline">GitHub →</a>
+            </div>
+
+            <!-- Business Websites -->
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-green-500/20 rounded-xl flex items-center justify-center">
+                        <i data-lucide="globe" class="w-5 h-5 text-green-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Business Websites</h3>
+                        <p class="text-gray-400 text-sm">Template sites</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Tigha66/local-business-websites" class="text-orange-400 text-sm hover:underline">GitHub →</a>
+            </div>
+        </div>
+
+        <!-- Live Sites -->
+        <h2 class="text-2xl font-bold mb-6">🌐 Live Websites</h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-12">
+            <a href="https://craft-barbers.vercel.app" class="bg-gray-900 border border-gray-800 p-4 rounded-xl hover:border-orange-500 transition">
+                <div class="font-bold">Craft Barbers</div>
+                <div class="text-gray-400 text-sm">Business Website</div>
+            </a>
+            <a href="https://bazs-plumbing.vercel.app" class="bg-gray-900 border border-gray-800 p-4 rounded-xl hover:border-orange-500 transition">
+                <div class="font-bold">Baz's Plumbing</div>
+                <div class="text-gray-400 text-sm">Business Website</div>
+            </a>
+            <a href="https://rm-barbers.vercel.app" class="bg-gray-900 border border-gray-800 p-4 rounded-xl hover:border-orange-500 transition">
+                <div class="font-bold">R & M Barbers</div>
+                <div class="text-gray-400 text-sm">Business Website</div>
+            </a>
+        </div>
+
+        <!-- Credentials -->
+        <h2 class="text-2xl font-bold mb-6">🔐 Connected Services</h2>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl mb-12">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <div class="text-gray-400 text-sm">Telnyx</div>
+                    <div class="font-mono text-green-400">+1 318-619-4142</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">ElevenLabs</div>
+                    <div class="font-mono text-green-400">sk_11af... (configured)</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">MiniMax</div>
+                    <div class="font-mono text-green-400">sk-api-HZHg... (configured)</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">Stripe</div>
+                    <div class="font-mono text-green-400">sk_live_... (configured)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VPS Info -->
+        <h2 class="text-2xl font-bold mb-6">🖥️ VPS Server</h2>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl mb-12">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <div class="text-gray-400 text-sm">Host</div>
+                    <div class="font-mono">76.13.252.4</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">Status</div>
+                    <div class="text-green-400">● Online</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">Voice Agent</div>
+                    <div class="text-green-400">● Running (PM2)</div>
+                </div>
+                <div>
+                    <div class="text-gray-400 text-sm">Domain</div>
+                    <div class="text-yellow-400">autoaiwebsolutions.com</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- To Do -->
+        <h2 class="text-2xl font-bold mb-6">📋 Next Steps</h2>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+            <ul class="space-y-3">
+                <li class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <span>Point autoaiwebsolutions.com DNS to VPS</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                    <span>Set Telnyx webhook to your domain</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>Voice Agent deployed on VPS</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>GitHub repos created</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
